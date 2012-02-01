@@ -1,0 +1,205 @@
+body {
+  background: #111111; }
+
+h1, small {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-family: Helvetica;
+  font-family: Arial;
+  letter-spacing: -5px;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 90px;
+  line-height: 90px;
+  margin-left: -200px;
+  margin-top: 100px;
+  position: absolute;
+  text-align: center;
+  display: block;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+
+small {
+  font-size: 12px;
+  letter-spacing: 10px;
+  margin-top: 180px;
+  height: 30px;
+  line-height: 30px; }
+
+#background {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  z-index: -2;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 180, color-stop(0%, #222222), color-stop(100%, #111111));
+  background-image: -webkit-radial-gradient(#222222, #111111 180px);
+  background-image: -moz-radial-gradient(#222222, #111111 180px);
+  background-image: -o-radial-gradient(#222222, #111111 180px);
+  background-image: -ms-radial-gradient(#222222, #111111 180px);
+  background-image: radial-gradient(#222222, #111111 180px); }
+
+#moja {
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  position: absolute;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #cc0000), color-stop(100%, #990000));
+  background-image: -webkit-radial-gradient(#cc0000, #990000 100px);
+  background-image: -moz-radial-gradient(#cc0000, #990000 100px);
+  background-image: -o-radial-gradient(#cc0000, #990000 100px);
+  background-image: -ms-radial-gradient(#cc0000, #990000 100px);
+  background-image: radial-gradient(#cc0000, #990000 100px); }
+  #moja * {
+    position: absolute; }
+  #moja .whiteglow, #moja .eye {
+    -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+    -o-box-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.75); }
+  #moja .head {
+    width: 195px;
+    height: 200px;
+    z-index: 0;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -o-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -khtml-border-radius: 200px;
+    border-radius: 200px;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #cc0000), color-stop(100%, #990000));
+    background-image: -webkit-radial-gradient(#cc0000, #990000 100px);
+    background-image: -moz-radial-gradient(#cc0000, #990000 100px);
+    background-image: -o-radial-gradient(#cc0000, #990000 100px);
+    background-image: -ms-radial-gradient(#cc0000, #990000 100px);
+    background-image: radial-gradient(#cc0000, #990000 100px); }
+  #moja .eye {
+    background: white;
+    width: 55px;
+    height: 50px;
+    background: white;
+    z-index: 100;
+    top: 10px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -khtml-border-radius: 100px;
+    border-radius: 100px;
+    -moz-border-radius-bottomleft: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+    -o-border-bottom-left-radius: 50px;
+    -ms-border-bottom-left-radius: 50px;
+    -khtml-border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    -moz-border-radius-topright: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -o-border-top-right-radius: 50px;
+    -ms-border-top-right-radius: 50px;
+    -khtml-border-top-right-radius: 50px;
+    border-top-right-radius: 50px; }
+    #moja .eye.left {
+      left: 20px; }
+    #moja .eye.right {
+      left: 120px;
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  #moja .mouth {
+    background: white;
+    width: 185px;
+    height: 100px;
+    top: 85px;
+    left: 5px;
+    z-index: 2;
+    -moz-border-radius-bottomleft: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -o-border-bottom-left-radius: 100px;
+    -ms-border-bottom-left-radius: 100px;
+    -khtml-border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    -moz-border-radius-bottomright: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -o-border-bottom-right-radius: 100px;
+    -ms-border-bottom-right-radius: 100px;
+    -khtml-border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 10px white inset;
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 10px white inset;
+    -o-box-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 10px white inset;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.55), 0 0 10px white inset;
+    background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(53%, #dddddd), color-stop(53%, #ffffff), color-stop(53%, #ffffff));
+    background-image: -webkit-linear-gradient(left bottom, #dddddd 53%, #ffffff 53%, #ffffff 53%);
+    background-image: -moz-linear-gradient(left bottom, #dddddd 53%, #ffffff 53%, #ffffff 53%);
+    background-image: -o-linear-gradient(left bottom, #dddddd 53%, #ffffff 53%, #ffffff 53%);
+    background-image: -ms-linear-gradient(left bottom, #dddddd 53%, #ffffff 53%, #ffffff 53%);
+    background-image: linear-gradient(left bottom, #dddddd 53%, #ffffff 53%, #ffffff 53%); }
+    #moja .mouth.shadow {
+      margin-top: 10px;
+      background: rgba(1, 1, 1, 0.15);
+      z-index: 1;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none; }
+  #moja .ear {
+    width: 195px;
+    height: 200px;
+    z-index: -1;
+    background: #cc0000;
+    overflow: hidden;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #cc0000), color-stop(100%, #990000));
+    background-image: -webkit-radial-gradient(#cc0000, #990000 100px);
+    background-image: -moz-radial-gradient(#cc0000, #990000 100px);
+    background-image: -o-radial-gradient(#cc0000, #990000 100px);
+    background-image: -ms-radial-gradient(#cc0000, #990000 100px);
+    background-image: radial-gradient(#cc0000, #990000 100px);
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -o-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -khtml-border-radius: 200px;
+    border-radius: 200px; }
+    #moja .ear.inner {
+      background: rgba(1, 1, 1, 0.21);
+      top: 5px;
+      right: 5px; }
+    #moja .ear.right .inner {
+      right: -5px; }
+    #moja .ear.left {
+      left: -120px;
+      top: -100px;
+      -moz-transform: rotate(-100deg);
+      -webkit-transform: rotate(-100deg);
+      -o-transform: rotate(-100deg);
+      -ms-transform: rotate(-100deg);
+      transform: rotate(-100deg); }
+    #moja .ear.right {
+      left: 120px;
+      top: -100px;
+      -moz-transform: rotate(100deg);
+      -webkit-transform: rotate(100deg);
+      -o-transform: rotate(100deg);
+      -ms-transform: rotate(100deg);
+      transform: rotate(100deg); }

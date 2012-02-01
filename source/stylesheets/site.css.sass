@@ -1,0 +1,135 @@
+@import compass/css3
+
+body
+  background: #111
+
+h1, small
+  margin: 0
+  padding: 0
+  color: white
+  text-transform: uppercase
+  font-size: 64px
+  font-family: Helvetica
+  font-family: Arial
+  letter-spacing: -5px
+  top: 50%
+  left: 50%
+  width: 400px
+  height: 90px
+  line-height: 90px
+  margin-left: -200px
+  margin-top: 100px
+  position: absolute
+  text-align: center
+  display: block
+  +text-shadow(0 0 20px rgba(255,255,255,0.2))
+
+small
+  font-size: 12px
+  letter-spacing: 10px
+  margin-top: 180px
+  height: 30px
+  line-height: 30px
+
+
+#background
+  $width: 500px
+  width: $width
+  height: $width
+  position: absolute
+  top: 50%
+  left: 50%
+  margin:
+    left: $width * -0.5 
+    top: $width * -0.5
+  z-index: -2
+  +background-image(radial-gradient(#222, #111 180px))
+
+#moja
+  left: 50%
+  top: 50%
+  margin-left: -100px
+  margin-top: -100px
+  position: absolute
+  +background-image(radial-gradient(#c00, #900 100px))
+  *
+    position: absolute
+
+  
+  .whiteglow
+    +box-shadow(0 0 20px rgba(255,255,255,0.75))
+  
+  .head
+    $width: 200px
+    width: $width - 5px
+    height: $width
+    z-index: 0
+    +border-radius($width)
+    +background-image(radial-gradient(#c00, #900 100px))
+
+  .eye
+    @extend .whiteglow
+    $eyeWidth: 50px
+    background: white
+    width: 55px
+    height: $eyeWidth
+    background: white
+    z-index: 100
+    top: 10px
+    +border-radius(100px)
+    +border-bottom-left-radius(50px)
+    +border-top-right-radius(50px)
+    
+    &.left
+      left: 20px
+    
+    &.right
+      left: 120px
+      +transform(scaleX(-1))
+
+  .mouth
+    background: white
+    width: 185px
+    height: 100px
+    top: 85px
+    left: 5px
+    z-index: 2
+    +border-bottom-radius(100px)
+    +border-top-radius(5px)
+    +box-shadow(0 0 20px rgba(255,255,255,0.55), 0 0 10px white inset)
+    +background-image(linear-gradient(left bottom, #ddd 53%, white 53%, white 53%))
+
+    &.shadow
+      margin-top: 10px
+      background: rgba(1,1,1,0.15)
+      z-index: 1
+      +box-shadow(none)
+
+  .ear
+    width: 195px
+    height: 200px
+    z-index: -1
+    background: #c00
+    overflow: hidden
+    +background-image(radial-gradient(#c00, #900 100px))
+    +border-radius(200px)
+
+    &.inner
+      background: rgba(1,1,1,0.21)
+      top: 5px
+      right: 5px
+    
+    &.right
+      .inner
+        right: -5px
+
+    &.left
+      left: -120px
+      top: -100px
+      +transform(rotate(-100deg))
+
+    &.right
+      left: 120px
+      top: -100px
+      +transform(rotate(100deg))
+
