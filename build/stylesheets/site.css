@@ -1,13 +1,13 @@
 body {
-  background: #111111; }
+  background: #111111;
+  font-family: Arial; }
 
-h1, small {
+h1 {
   margin: 0;
   padding: 0;
   color: white;
   text-transform: uppercase;
   font-size: 64px;
-  font-family: Helvetica;
   font-family: Arial;
   letter-spacing: -5px;
   top: 50%;
@@ -23,11 +23,30 @@ h1, small {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
 
 small {
-  font-size: 12px;
-  letter-spacing: 10px;
+  color: white;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
   margin-top: 180px;
-  height: 30px;
-  line-height: 30px; }
+  height: 20px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: right;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 5px;
+  position: absolute;
+  background: black;
+  color: #444444; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: lowercase; }
+  a:hover {
+    color: white; }
 
 #background {
   width: 500px;
