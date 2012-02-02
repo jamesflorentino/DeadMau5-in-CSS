@@ -1,3 +1,18 @@
+@-webkit-keyframes pulsate {
+  from {
+    background-color: white;
+    -moz-box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); }
+
+  to {
+    background-color: #aaaaaa;
+    -moz-box-shadow: 0 0 0px white;
+    -webkit-box-shadow: 0 0 0px white;
+    -o-box-shadow: 0 0 0px white;
+    box-shadow: 0 0 0px white; } }
+
 body {
   background: #111111;
   font-family: Arial; }
@@ -99,6 +114,8 @@ a {
     background-image: -o-radial-gradient(#cc0000, #990000 100px);
     background-image: -ms-radial-gradient(#cc0000, #990000 100px);
     background-image: radial-gradient(#cc0000, #990000 100px); }
+  #moja > .eye, #moja .mouth {
+    -webkit-animation: pulsate 500ms linear infinite; }
   #moja .eye {
     background: white;
     width: 55px;

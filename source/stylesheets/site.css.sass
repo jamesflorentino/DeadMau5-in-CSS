@@ -1,5 +1,13 @@
 @import compass/css3
 
+@-webkit-keyframes pulsate
+  from
+    background-color: white
+    +box-shadow(0 0 30px rgba(255,255,255,0.5))
+  to
+    background-color: #aaa
+    +box-shadow(0 0 0px white)
+
 body
   background: #111
   font-family: Arial
@@ -84,6 +92,9 @@ a
     z-index: 0
     +border-radius($width)
     +background-image(radial-gradient(#c00, #900 100px))
+  
+  > .eye, .mouth
+    -webkit-animation: pulsate 500ms linear infinite
 
   .eye
     @extend .whiteglow
