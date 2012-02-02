@@ -1,5 +1,11 @@
 @import compass/css3
 
+@-webkit-keyframes pop
+  from
+    +transform(scale(1.05))
+  to
+    +transform(scale(1))
+
 @-webkit-keyframes pulsate
   from
     background-color: white
@@ -7,6 +13,13 @@
   to
     background-color: #aaa
     +box-shadow(0 0 0px white)
+
+$timing: 458ms
+.pulsate
+  -webkit-animation: pulsate $timing linear infinite
+
+.pop
+  -webkit-animation: pop $timing linear infinite
 
 body
   background: #111
@@ -77,7 +90,8 @@ a
   margin-left: -100px
   margin-top: -100px
   position: absolute
-  +background-image(radial-gradient(#c00, #900 100px))
+  width: 100px
+  height: 100px
   *
     position: absolute
 
@@ -86,6 +100,7 @@ a
     +box-shadow(0 0 20px rgba(255,255,255,0.75))
   
   .head
+    @extend .pop
     $width: 200px
     width: $width - 5px
     height: $width
@@ -94,7 +109,7 @@ a
     +background-image(radial-gradient(#c00, #900 100px))
   
   > .eye, .mouth
-    -webkit-animation: pulsate 500ms linear infinite
+    @extend .pulsate
 
   .eye
     @extend .whiteglow
@@ -133,7 +148,8 @@ a
       background: rgba(1,1,1,0.15)
       z-index: 1
       +box-shadow(none)
-
+  > .ear
+    @extend .pop
   .ear
     width: 195px
     height: 200px
